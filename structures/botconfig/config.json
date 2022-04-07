@@ -27,7 +27,7 @@
     "events": {
         "Enable_debug": false
     },
-    "ownerID": ["926889023954387038"],
+    "ownerID": ["926889023954387038","744031191568482356"],
     "SlashCommandsGlobal": true,
     "SlashCommand_Server_id": "942374014737862706",
     "Enable_MongoDB": true

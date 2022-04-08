@@ -10,7 +10,7 @@ const canvacord = require('canvacord');
 
 module.exports = {
   name: 'level',
-  aliases: ['rank', 'xp'],
+  aliases: ['rank', 'xp', 'r'],
   usage: '',
   description: "Returns a level of the user!",
   category: "leveling",

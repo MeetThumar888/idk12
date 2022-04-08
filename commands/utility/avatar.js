@@ -7,7 +7,7 @@ const {
 
 module.exports = {
   name: 'avatar',
-  aliases: [],
+  aliases: ['av'],
   usage: '@member',
   description: 'Shows the user avatar!',
   category: "utility",

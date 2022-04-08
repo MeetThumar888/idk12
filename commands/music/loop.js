@@ -46,14 +46,7 @@ module.exports = {
                 ]
             });
 
-            if (channel.userLimit != 0 && channel.full)
-                return message.reply({
-                    embeds: [new MessageEmbed()
-                        .setColor(ee.wrongcolor)
-                        .setFooter(ee.footertext, ee.footericon)
-                        .setTitle(`Your Voice Channel is full, I can't join!`)
-                    ]
-                });
+            
 
 
             if (guild.me.voice.channelId && VoiceChannel.id !== guild.me.voice.channelId) return message.reply({

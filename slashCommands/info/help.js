@@ -27,8 +27,7 @@ module.exports = {
    * @param {String[]} args
    */
 
-  async execute(client, message, args, ee, prefix) {
-
+  async execute(client, interaction, args, ee) {
     try {
       if (args[0]) {
         const embed = new MessageEmbed()
@@ -36,7 +35,7 @@ module.exports = {
 
         const cmd = client.commands.get(args[0].toLowerCase()) || client.commands.get(client.aliases.get(args[0].toLowerCase()));
         if (!cmd) {
-          return message.reply({
+          return interaction.reply({
             embeds: [embed
               .setColor(ee.wrongcolor)
               .setDescription(`${client.allEmojis.x} No Information found for the command **${args[0].toLowerCase()}**`)
@@ -54,7 +53,7 @@ module.exports = {
           embed.addField("**<a:ag_ARROW:959084917071937607> Usage**", `\`\`\`${prefix}${cmd.usage}\`\`\``);
           // embed.setFooter("Syntax: <> = required, [] = optional");
         }
-        return message.reply({
+        return interaction.reply({
           embeds: [embed]
         });
       } else {
@@ -206,7 +205,7 @@ module.exports = {
 
         var edited = false;
 
-        let helpmsg = await message.reply({
+        let helpmsg = await interaction.reply({
           embeds: [OverviewEmbed],
           components: allbuttons_home
         }).catch(e => {

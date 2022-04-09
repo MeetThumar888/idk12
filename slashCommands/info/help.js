@@ -1,12 +1,12 @@
 const config = require(`${process.cwd()}/structures/botconfig/config.json`);
 const {
   Client,
-  Message,
+  CommandInteraction,
   MessageEmbed,
   MessageActionRow,
   MessageSelectMenu,
   MessageButton
-} = require('discord.js');
+} = require("discord.js");
 const eec = require(`${process.cwd()}/structures/botconfig/embed.json`);
 
 module.exports = {

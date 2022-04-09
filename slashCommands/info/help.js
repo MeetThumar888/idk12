@@ -23,7 +23,7 @@ module.exports = {
 
   /**
    * @param {Client} client 
-   * @param {Message} message
+   * @param {CommandInteraction} interaction
    * @param {String[]} args
    */
 

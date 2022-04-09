@@ -240,7 +240,7 @@ module.exports = {
                   embeds: [new MessageEmbed()
                     .setFooter(client.user.username, client.user.displayAvatarURL())
                     .setColor(ee.color)
-                    .setAuthor(`${client.user.username} Help Menu`, client.user.displayAvatarURL())
+                    .setAuthor(`${client.user.username} Help Menu`, interaction.user.displayAvatarURL())
                     .addFields({
                       name: `<:information_emoji:958098486967025674>┃Information`,
                       value: `${client.commands.filter((cmd) => cmd.category === "info").sort((a,b) => a.name.localeCompare(b.name)).map((cmd) => `\`${cmd.name}\``).join("︲")}`
@@ -502,7 +502,7 @@ module.exports = {
       const errorLogsChannel = client.channels.cache.get(config.botlogs.errorLogsChannel);
       return errorLogsChannel.send({
         embeds: [new MessageEmbed()
-          .setAuthor(message.guild.name, interaction.guild.iconURL({
+          .setAuthor(interaction.guild.name, interaction.guild.iconURL({
             dynamic: true
           }))
           .setColor("RED")

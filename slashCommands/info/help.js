@@ -214,14 +214,14 @@ module.exports = {
         });
 
         const collector = helpmsg.createMessageComponentCollector({
-          filter: (i) => (i.isButton() || i.isSelectMenu()) && i.user && i.message.author.id == client.user.id,
+          filter: (i) => (i.isButton() || i.isSelectMenu()) && i.user && i.interaction.author.id == client.user.id,
           time: 180e3
         });
 
         collector.on('collect', async b => {
           try {
             if (b.isButton()) {
-              if (b.user.id !== message.author.id)
+              if (b.user.id !== interaction.author.id)
                 return b.reply({
                   content: `${client.allEmojis.x} **Only the one who typed \`${prefix}help\` is allowed to react!**`,
                   ephemeral: true
@@ -502,7 +502,7 @@ module.exports = {
       const errorLogsChannel = client.channels.cache.get(config.botlogs.errorLogsChannel);
       return errorLogsChannel.send({
         embeds: [new MessageEmbed()
-          .setAuthor(message.guild.name, message.guild.iconURL({
+          .setAuthor(message.guild.name, interaction.guild.iconURL({
             dynamic: true
           }))
           .setColor("RED")

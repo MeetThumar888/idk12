@@ -33,12 +33,12 @@ module.exports = {
         const embed = new MessageEmbed()
           .setColor(ee.color)
 
-        const cmd = client.commands.get(args[0].toLowerCase()) || client.commands.get(client.aliases.get(args[0].toLowerCase()));
+        const cmd = client.commands.get(args[0].toLowerCase()) || client.commands.get(client.aliases.get(.toLowerCase()));
         if (!cmd) {
           return interaction.reply({
             embeds: [embed
               .setColor(ee.wrongcolor)
-              .setDescription(`${client.allEmojis.x} No Information found for the command **${args[0].toLowerCase()}**`)
+              .setDescription(`${client.allEmojis.x} No Information found for the command **${.toLowerCase()}**`)
             ]
           });
         }
@@ -214,7 +214,7 @@ module.exports = {
         });
 
         const collector = helpmsg.createMessageComponentCollector({
-          filter: (i) => (i.isButton() || i.isSelectMenu()) && i.user && i.interaction.author.id == client.user.id,
+          filter: (i) => (i.isButton() || i.isSelectMenu()) && i.user && i.user client.author.id == client.user.id,
           time: 180e3
         });
 
@@ -499,7 +499,7 @@ module.exports = {
       }
     } catch (e) {
       console.log(String(e.stack).bgRed)
-      const errorLogsChannel = client.channels.cache.get(config.botlogs.errorLogsChannel);
+      const errorLogsChannel = interaction.channels.cache.get(config.botlogs.errorLogsChannel);
       return errorLogsChannel.send({
         embeds: [new MessageEmbed()
           .setAuthor(interaction.guild.name, interaction.guild.iconURL({
@@ -508,7 +508,7 @@ module.exports = {
           .setColor("RED")
           .setTitle(`${client.allEmojis.x} Got a Error:`)
           .setDescription(`\`\`\`${e.stack}\`\`\``)
-          .setFooter(`Having: ${message.guild.memberCount} Users`)
+          .setFooter(`Having: ${interaction.guild.memberCount} Users`)
         ]
       })
     }

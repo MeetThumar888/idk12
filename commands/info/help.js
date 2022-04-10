@@ -202,6 +202,7 @@ module.exports = {
 <:report_1:959023235394043924> Report
 <a:level_up:959023362229829672> Ranking**`
           }])
+          .addField(`<a:Vote_1:962634487785721896> **Vote Me**`, `>>> **[Vote Us On Discordbotlab](https://bots.discordlabs.org/bot/948230363413639209)**`)
           .addField(`<:links_1:959023503653359618> **Links:**`, `>>> **[Support Server](https://dsc.gg/freakbotsupport) | [Invite Me](https://discord.com/api/oauth2/authorize?client_id=948230363413639209&permissions=8&scope=bot%20applications.commands) | [Freak Music](https://discord.com/api/oauth2/authorize?client_id=957348725129359520&permissions=139652884800&scope=bot%20applications.commands) | [Freak Ticket](https://discord.com/api/oauth2/authorize?client_id=957526708846727198&permissions=8&scope=bot)**`)
 
         var edited = false;

@@ -185,7 +185,7 @@ module.exports = {
           .setAuthor(`${client.user.username} Help Menu`, client.user.displayAvatarURL())
           // .setTitle(`<:setting:901790652768079922> ${client.user.username} Help Menu`)
           .setDescription(`__**Prefix Information**__
-> My Prefix For **${message.guild.name}** is \`${prefix}\`
+> My Prefix For **${interaction.guild.name}** is \`${prefix}\`
 > You can also mention ${client.user} to get prefix info.`)
           .addFields([{
             name: `<:category_1:959026152897404938> **Categories:**`,

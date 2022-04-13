@@ -22,7 +22,7 @@ module.exports = {
   description: "Says your input via the bot",
   category: "utility",
   cooldown: 0,
-  userPermissions: "MANAGE_GUILD",
+  userPermissions: "",
   botPermissions: "",
   ownerOnly: false,
   toggleOff: false,

@@ -13,7 +13,7 @@ module.exports = {
   description: '',
   category: "setup",
   cooldown: 0,
-  userPermissions: "ADMINISTRATOR",
+  userPermissions: "MANAGE_NICKNAMES",
   botPermissions: "",
   ownerOnly: false,
   toggleOff: false,

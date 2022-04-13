@@ -39,10 +39,7 @@ module.exports = {
         .setColor(ee.wrongcolor)
         .setFooter(ee.footertext, ee.footericon)
         .setDescription(`This is not a valid time!`)]});
-      if (milliseconds < 1000) return message.reply({ embeds:[new MessageEmbed()
-        .setColor(ee.wrongcolor)
-        .setFooter(ee.footertext, ee.footericon)
-        .setDescription(`The minimum slowmode is 1 seconds`)]});
+      
       if (milliseconds > 21600000) return message.reply({ embeds:[new MessageEmbed()
         .setColor(ee.wrongcolor)
         .setFooter(ee.footertext, ee.footericon)

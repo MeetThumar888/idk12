@@ -13,8 +13,8 @@ module.exports = {
   description: "Steal Emojis from Other Servers.",
   category: "utility",
   cooldown: 0,
-  userPermissions: "USE_EXTERNAL_EMOJIS",
-  botPermissions: "USE_EXTERNAL_EMOJIS",
+  userPermissions: "MANAGE_EMOJIS",
+  botPermissions: "MANAGE_EMOJIS",
   ownerOnly: false,
   toggleOff: false,
 

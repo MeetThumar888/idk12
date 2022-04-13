@@ -13,7 +13,7 @@ module.exports = {
   description: '',
   category: "moderation",
   cooldown: 0,
-  userPermissions: "KICK_MEMBERS",
+  userPermissions: "MANAGE_MESSAGES",
   botPermissions: "KICK_MEMBERS",
   ownerOnly: false,
   toggleOff: false,

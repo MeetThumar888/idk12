@@ -23,7 +23,7 @@ module.exports = {
   category: "utility",
   cooldown: 0,
   userPermissions: "",
-  botPermissions: "",
+  botPermissions: "MANAGE_MESSAGES",
   ownerOnly: false,
   toggleOff: false,
 

@@ -54,7 +54,7 @@
     "process": "^0.11.10",
     "relevant-urban": "^2.0.0",
     "sequelize": "^6.12.0-beta.3",
-    "skia-canvas": "^0.9.27",
+    "skia-canvas": "^3.0.0",
     "sqlite3": "^5.0.2",
     "voucher-code-generator": "^1.1.1",
     "weather-js": "^2.0.0",

@@ -29,7 +29,7 @@
     "discord-html-transcripts": "^1.2.3",
     "discord-xp": "^1.1.16",
     "discord.js": "^13.5.0",
-    "distube": "^3.0.3",
+    "distube": "^5.2.2",
     "dotenv": "^10.0.0",
     "enmap": "^5.8.7",
     "express": "^4.17.3",
